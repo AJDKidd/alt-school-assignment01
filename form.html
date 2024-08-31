@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function validatePassword() {
+            const password = document.getElementById("password").value;
+            const confirmPassword = document.getElementById("confirm_password").value;
+            if (password !== confirmPassword) {
+                alert("Passwords do not match.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>AltSchool Application Form</h1>
+        <!-- Global Navigation -->
+        <nav class="navbar" id="top">
+            <ul class="nav-links">
+                <li><a href="index.html">About Me</a> </li>
+                <li><a href="form">Application Form</a> </li>
+                <li><a href="table.html">AltSchool Courses</a></li>
+                <li><a href="media.html">Media Message</a></li>
+                <li><a href="top"> </a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+    <div class="formcontainer">
+       <div class="left-side">
+        <img src="media\altschoolmedia.png" alt="">
+        <div class="centered-text">
+            <h1>
+                Learn highly sought<br>
+                after skills without<br>
+                hassle.<br>
+            </h1>
+        </div>
+       </div>
+        <div class="right-side">
+        <section id="form">
+         <h1 class="form-header">Sign Up</h1>
+         <form class="style-form" action="#" method="post" onsubmit="return validatePassword()">
+            <section>
+            <div class="info-container">
+                
+                
+
+                <div class="grid-item">
+                <label for="firstname">First Name:</label>
+                <input type="text" id="firstname" name="firstname" required>
+                </div>
+
+                <div class="grid-item">
+                    <label for="lastname">Last Name:</label>
+                     <input type="text" id="lastname" name="lastname" required>
+                     </div>
+
+                <div class="grid-item">
+                <label for="gender">Gender:</label>
+                <select name="gender" id="gender" required> 
+                <option value="male">Male</option>
+                <option value="female">female</option>
+                <option value="nil">Rather not Say</option>
+                </select>
+                </div>
+
+                <div class="grid-item">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" required>
+                    </div>
+
+                <div class="grid-item">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                    </div>
+
+                <div class="grid-item">
+                    <label for="phone">Phone Number:</label><br><br>
+                    <input type="tel" id="phone" name="phone" 
+                    placeholder="123-456-7890">
+                </div>
+
+                 <div class="grid-item">
+                     <label for="country">Country:</label>
+                    <input type="text" id="country" name="country" required>
+                </div>
+
+                <div class="grid-item">
+                    <label for="state">State:</label>
+                    <input type="text" id="state" name="state" required>
+                </div>
+
+                <div class="grid-item1">
+                <label for="info">How did you hear about us:</label>
+               <textarea type="text" id="info" name="info" row="4" cols="35" required></textarea>
+                </div>
+
+                <div class="grid-item">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required><br><br>
+                </div>
+
+                <div class="grid-item">
+                    <label for="confirm_password">Confirm Password:</label>
+                    <input type="password" id="confirm_password" name="confirm_password" required><br><br>
+                </div>
+
+
+                
+
+            </div>
+
+            </section>
+
+            <h4>By clicking continue, I agree to  <a href="">Terms</a> of Use and acknowledge that I
+                have read the  <a href="">Privacy Policy</a>.</h4>
+
+             <!-- Submit Button -->
+
+             <button type="submit" class="submit">Submit Application</button>
+
+         </form>
+        </div>
+    </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Back to <a href='#top'>Scroll to Top</a> </p>
+    </footer>
+</body>
+</html>

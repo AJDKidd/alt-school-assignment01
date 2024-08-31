@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Message - AltSchool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--Global Navigation-->
+    <nav class="navbar" id="top">
+        <ul class="nav-links">
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="form.html">Application Form</a></li>
+            <li><a href="table.html">AltSchool Courses</a></li>
+            <li><a href="media.html">Media Message</a></li>
+            <li><a href="top"> </a> </li>
+        </ul>
+     </nav>
+
+     <header>
+        <h1>Media Message About Me</h1>
+     </header>
+
+     <main>
+        <section>
+            <h2>About Me</h2>
+            <picture>
+                <source media="(min-width: 1024px)" srcset="large-image.jpg">
+                <source media="(min-width: 768px)" srcset="medium-image.jpg">
+                <source media="(min-width: 480px)" srcset="small-image.jpg">
+                <img src="fallback-image.jpg" alt="A descriptive image about myself">
+            </picture>
+            <audio controls>
+                <source src="audio-message.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <video controls>
+                <source src="video-message.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            
+        </section>
+     </main>
+
+     <footer>
+        <p>Back to <a href='#top'>Scroll to Top</a> </p>
+    </footer>
+</body>
+</html>
